@@ -1,0 +1,181 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(
+    rgba(85, 193, 255, 0.171),
+    rgba(47, 157, 221, 0.479) 100%
+  );
+}
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 450px;
+  height: max-content;
+  background-color: #ffffff;
+}
+@media (max-width: 440px) {
+  .card {
+    width: 320px;
+  }
+}
+@media (max-width: 440px) {
+  .card {
+    width: 300px;
+  }
+}
+header {
+  background: rgba(68, 134, 255, 0.719);
+  display: flex;
+}
+ul {
+  color: #ffffff;
+  margin: 0;
+  padding: 25px;
+  padding-left: 50px;
+}
+.space {
+  flex: 1;
+}
+.img-close {
+  padding-right: 30px;
+  color: brown;
+}
+.img-close {
+  cursor: pointer;
+}
+.today h5 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(206, 206, 206, 0.527);
+  line-height: 0.1rem;
+}
+.today span {
+  background: #ffffff;
+  padding: 10px;
+}
+.today {
+  color: rgba(155, 155, 155, 0.301);
+  margin: 40px 20px 0px 20px;
+}
+
+.content {
+  margin: 20px;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.left {
+  max-width: 70%;
+  width: max-content;
+  border-radius: 2px;
+
+  padding: 10px;
+  margin-top: 0;
+  background-color: #e6edf6;
+}
+.text-grey-left {
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: grey;
+}
+.text-grey-right {
+  margin-bottom: 5px;
+  text-align: right;
+  font-size: 15px;
+  color: grey;
+}
+.right {
+  border-radius: 2px;
+  padding: 13px;
+  margin-top: 0;
+  background-color: #f2f2f2;
+}
+.right-danger {
+  border-radius: 2px;
+  padding: 13px;
+  margin-top: 0;
+  background-color: #f9c2c1;
+}
+.pull-right {
+  margin-left: auto;
+  max-width: 70%;
+  width: max-content;
+}
+input[type="text"] {
+  border: none;
+  width: 50%;
+  font-size: 16px;
+}
+input[type="text"]:focus {
+  border: none;
+  outline: none;
+}
+.bottom {
+  margin: 20px 20px;
+  display: flex;
+}
+.bottom h5 {
+  margin: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6899dd;
+}
+
+?
+/* left bubble */
+.tri-right.border.left-top:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -10px;
+  right: auto;
+  top: -1px;
+  bottom: auto;
+  border: 32px solid;
+  border-color: #e6edf6 transparent transparent transparent;
+}
+.tri-right.left-top:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -6px;
+
+  right: auto;
+  top: 0px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: #e6edf6 transparent transparent transparent;
+}
+.talk-bubble {
+  position: relative;
+  height: auto;
+}
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+  content: " ";
+
+  width: 0;
+  height: 0;
+
+  right: -40px;
+  top: -8px;
+  bottom: auto;
+  border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -5px;
+  top: 0px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: #f2f2f2 transparent transparent transparent;
+}
